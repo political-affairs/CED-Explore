@@ -155,7 +155,7 @@ import os
 import pandas as pd
 import numpy as np
 
-#Function to create a bar plot of the counts of unique values in the
+#Function to create a bar plot of the counts of unique values in the chosen column
 def count_bar_plot(plot_column, title):
     #dataframe column named what ever string is passed as plot_column
     #plot_column: str of name of column
