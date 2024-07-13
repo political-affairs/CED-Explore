@@ -6,9 +6,6 @@ file1 = 'data/ontario_debates_june_2023.xlsx'
 file2 = 'data/on_ced_2014.xlsx'
 file3 = 'data/on_ced_2018.xlsx'
 file4 = 'data/ontario_sentences_june_2023.xlsx'
-# Load data into pandas dataframes
-# df1 = pd.read_excel(file1)
-# df2 = pd.read_excel(file2)
 
 # Display samples of each dataframe
 st.title("CED Ontario Data Sample", anchor=False)
@@ -149,17 +146,9 @@ with open('data/Cross-Domain Topic Classification for Political Texts.pdf', 'rb'
     st.download_button(label="Download Cross-Domain Topic PDF", data=f, file_name='Cross-Domain Topic Classification for Political Texts.pdf')
 
 
-st.write('The code below requires you download the BOTH models below into folder data/models/')
-
-c = st.columns(2)
-with c[0]:
-    with open('data/models/tfidf_8.pkl', 'rb') as f:
-        st.download_button(label="Download pre-trained TF-IDF vectorizer", data=f, file_name='tfidf_8.pkl')
-with c[1]:
-    with open('data/models/logistic_model_8.pkl', 'rb') as f:
-        st.download_button(label="Download pre-trained logistic regression model", data=f, file_name='logistic_model_8.pkl')
-
-st.markdown('[Colab Notebook](https://colab.research.google.com/drive/1ANDuQnLOwBZgGrlCQOP3DTm4BGX6v0X9?usp=sharing)')
+st.write('The code below requires you download the BOTH models (tfidf_8.pkl, logistic_model_8.pkl ) below into folder data/models/')
+st.markdown('You can download these models here: [Cross-Domain Codebase](https://codeocean.com/capsule/0078777/tree/v1)')
+st.markdown('[Analysis Colab Notebook](https://colab.research.google.com/drive/1ANDuQnLOwBZgGrlCQOP3DTm4BGX6v0X9?usp=sharing)')
 st.code("""
 #define import libraries and define function to plot prediced class counts
 import os
