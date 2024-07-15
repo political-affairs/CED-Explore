@@ -146,7 +146,7 @@ with open('data/Cross-Domain Topic Classification for Political Texts.pdf', 'rb'
     st.download_button(label="Download Cross-Domain Topic PDF", data=f, file_name='Cross-Domain Topic Classification for Political Texts.pdf')
 
 
-st.write('The code below requires you download the BOTH models (tfidf_8.pkl, logistic_model_8.pkl ) below into folder data/models/')
+st.write('The code below requires you download BOTH models (tfidf_8.pkl, logistic_model_8.pkl ) below into folder data/models/')
 st.markdown('You can download these models here: [Cross-Domain Codebase](https://codeocean.com/capsule/0078777/tree/v1)')
 st.markdown('[Analysis Colab Notebook](https://colab.research.google.com/drive/1ANDuQnLOwBZgGrlCQOP3DTm4BGX6v0X9?usp=sharing)')
 st.code("""
